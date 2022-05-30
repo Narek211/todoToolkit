@@ -1,0 +1,56 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": ["plugin:react/recommended"],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": ["react"],
+    "rules": {
+      "react/prop-types": "off",
+      "no-duplicate-imports": "off",
+      "dot-location": ["error", "property"],
+      "eqeqeq": ["error", "always"],
+      "no-cond-assign": ["error", "except-parens"],
+      "no-const-assign": "error",
+      "no-unused-vars": "off",
+      "no-use-before-define": "off",
+      "react/destructuring-assignment": ["error", "always"],
+      "react/function-component-definition": [
+        "error",
+        {
+          "namedComponents": "arrow-function",
+          "unnamedComponents": "arrow-function"
+        }
+      ],
+      "react/no-children-prop": "error",
+      "react/no-danger": "error",
+      "react/no-deprecated": "error",
+      "react/no-did-mount-set-state": "off",
+      "react/no-did-update-set-state": "error",
+      "react/no-direct-mutation-state": "error",
+      "react/no-string-refs": ["error", { "noTemplateLiterals": true }],
+      "react/no-unsafe": ["error", { "checkAliases": true }],
+      "react/style-prop-object": "error",
+      "react/jsx-boolean-value": "error",
+      "react/jsx-fragments": ["error", "syntax"],
+      "react/jsx-key": ["error", { "checkFragmentShorthand": true }],
+      "react/jsx-no-target-blank": "error",
+      "react/jsx-no-undef": "error",
+      "react/jsx-sort-props": [
+        "off",
+        {
+          "callbacksLast": true,
+          "shorthandFirst": true,
+          "reservedFirst": ["key", "ref"]
+        }
+      ],
+      "arrow-body-style": ["error", "as-needed"]
+    }
+  }

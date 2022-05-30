@@ -1,0 +1,23 @@
+.aside {
+  box-sizing: border-box;
+  width: 300px;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: white;
+  padding: 40px;
+
+  & nav {
+    display: flex;
+    flex-direction: column;
+
+    & a {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.active {
+  color: red;
+}
